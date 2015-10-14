@@ -148,10 +148,15 @@ ul, li {
 
 article.info {
   padding: 0px 40px;
-  text-align: left; }
+  text-align: left;
+  color: #556369; }
+  article.info h3 {
+    color: black; }
 
 footer {
   background: black;
-  color: #fff; }
+  color: #556369;
+  text-align: center;
+  padding: 10px; }
   footer a {
     color: #fff; }

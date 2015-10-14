@@ -181,14 +181,19 @@ ul, li {
 article.info {
   padding: 0px 40px;
   text-align: left;
-
+  color: #556369;
+    h3 {
+      color: black;
+    }
 }
 
 //BOTTOM//*********************
 
 footer {
   background: black;
-  color: #fff;
+  color: #556369;
+  text-align: center;
+  padding: 10px;
     a {
       color: #fff;
     }
