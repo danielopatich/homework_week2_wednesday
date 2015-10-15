@@ -10,22 +10,38 @@ html {
   font-family: 'Myriad';
   src: url(file:///Users/danielopatich1/dev/homework/week2/wednesday/fonts/myriad.otf); }
 
-@media screen and (max-width: 478px) {
-  width: 100%; }
+@media (min-width: 478px) {
+  max-width: 100%; }
+
+@media (min-width: 978px) {
+  section figure {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%; }
+    section figure:last-child {
+      margin-right: 0; }
+    section figure:nth-child(4n) {
+      margin-right: 0; }
+    section figure:nth-child(4n+1) {
+      clear: left; }
+    section figure article {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      section figure article:last-child {
+        margin-right: 0; }
+      section figure article:nth-child(2n) {
+        margin-right: 0; }
+      section figure article:nth-child(2n+1) {
+        clear: left; } }
 
 * {
   font-family: 'Myriad'; }
 
 main {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  height: 100px; }
-  main::after {
-    clear: both;
-    content: "";
-    display: table; }
+  overflow: auto; }
 
 header.top {
   width: 100%;
@@ -127,7 +143,8 @@ figure.fourty h2 {
 .options {
   color: #5C6A6F;
   display: block;
-  margin: -32px 0 0px 0px; }
+  margin: -32px 0 0px 0px;
+  max-width: 100%; }
   .options li {
     background: #F7F7F7; }
 
@@ -149,7 +166,8 @@ ul, li {
 article.info {
   padding: 0px 40px;
   text-align: left;
-  color: #556369; }
+  color: #556369;
+  display: block; }
   article.info h3 {
     color: black; }
 
@@ -157,6 +175,7 @@ footer {
   background: black;
   color: #556369;
   text-align: center;
-  padding: 10px; }
+  padding: 10px;
+  width: 100%; }
   footer a {
     color: #fff; }

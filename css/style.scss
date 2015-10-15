@@ -13,20 +13,30 @@
 
 // @media | use this to increase columns for max page size|
 
-@media screen and (max-width: 478px) {
-   width: 100%;
- }
+@media (min-width: 478px) {
+  max-width: 100%;
+}
 
+@media (min-width:978px) {
+    section figure {
+      @include span-columns(9);
+      @include omega(4n);
+      article {
+        @include span-columns(4);
+        @include omega(2n);
+      }
+  }
+}
 
 * {
   font-family: 'Myriad';
 }
 
 main {
-  @include outer-container;
-  max-width: 100%;
-  height: 100px;
+  overflow: auto;
+  // @include outer-container;
 }
+
 
 //*********THIS IS THE TOP*************/////////////////
 
@@ -71,6 +81,20 @@ section figure  {
   margin-top: 0;
   margin-bottom: 2em;
 }
+
+// article {
+//     @include span-columns(8);
+// }
+// section {
+//   margin: 0;
+//   margin-top: 25px;
+//   position: relative;
+//   @include span-columns(9);
+//   @include omega(2n);
+//   figure {
+//     width: 100%;
+//   }
+// }
 
 figure.five h3 {
   font-size: 20px;
@@ -152,6 +176,7 @@ figure.fourty h2 {
   color: #5C6A6F;
   display: block;
   margin: -32px 0 0px 0px;
+  max-width: 100%;
     li {
       background: #F7F7F7;
     }
@@ -182,6 +207,7 @@ article.info {
   padding: 0px 40px;
   text-align: left;
   color: #556369;
+  display: block;
     h3 {
       color: black;
     }
@@ -194,6 +220,7 @@ footer {
   color: #556369;
   text-align: center;
   padding: 10px;
+  width: 100%;
     a {
       color: #fff;
     }
